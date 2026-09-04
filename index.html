@@ -1,0 +1,114 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Smoke Screen · Blog Dashboard</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+:root{--or:#D95C2E;--ch:#1E2535;--bg:#F6F7F9;--card:#fff;--mut:#6B7A99;--lt:#F5EFE9;--bd:#E3E6EB}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:#222;font-size:14px}
+header{background:var(--ch);color:#fff;padding:18px 28px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}
+header h1{margin:0;font-size:20px}header h1 span{color:var(--or)}header small{color:#B8C0D0}
+nav{display:flex;gap:4px;padding:10px 28px 0;background:#fff;border-bottom:1px solid var(--bd);flex-wrap:wrap}
+nav button{border:0;background:none;padding:10px 14px;font-size:14px;cursor:pointer;color:var(--mut);border-bottom:3px solid transparent}
+nav button.on{color:var(--ch);font-weight:bold;border-color:var(--or)}
+main{padding:20px 28px;max-width:1500px;margin:auto}.tab{display:none}.tab.on{display:block}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin-bottom:18px}
+.kpi{background:var(--ch);color:#fff;border-radius:10px;padding:16px}.kpi b{display:block;font-size:30px;color:var(--or)}.kpi span{font-size:12px;color:#C9D0DD}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:14px;margin-bottom:18px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:16px}.card h3{margin:0 0 10px;font-size:14px;color:var(--ch)}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px;align-items:center}
+.filters select,.filters input{padding:7px 9px;border:1px solid var(--bd);border-radius:6px;font-size:13px;background:#fff}
+.filters input{min-width:240px}.filters .n{color:var(--mut);font-size:12px;margin-left:auto}
+table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--bd);border-radius:10px;overflow:hidden;font-size:13px}
+th{background:var(--ch);color:#fff;text-align:left;padding:9px 10px;cursor:pointer;white-space:nowrap;user-select:none;font-size:12px}th:hover{background:#2c3850}
+td{padding:8px 10px;border-top:1px solid var(--bd);vertical-align:top}tr:nth-child(even) td{background:#FBF9F7}
+td a{color:var(--or);text-decoration:none;font-weight:bold}td a:hover{text-decoration:underline}
+.pill{display:inline-block;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:bold;white-space:nowrap}
+.Live{background:#E6F4EA;color:#1E7A3A}.Planned{background:var(--lt);color:var(--or)}
+.Missing{background:#FDE8E4;color:#B3391B}.Weak{background:#FFF3D6;color:#9A6400}.Striking{background:#E3ECFB;color:#2A4E9C}.Defend{background:#E6F4EA;color:#1E7A3A}
+.TOFU{background:#EEF0F4;color:#445}.MOFU{background:#E3ECFB;color:#2A4E9C}.BOFU{background:#E6F4EA;color:#1E7A3A}
+.rec{font-size:12px;color:#444}.rec.hot{color:#B3391B;font-weight:bold}
+.bar{height:8px;background:#EEF0F4;border-radius:4px;overflow:hidden}.bar i{display:block;height:100%;background:var(--or)}
+.clusters{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
+.cl{background:#fff;border:1px solid var(--bd);border-radius:10px;padding:14px;border-top:4px solid var(--or)}.cl h4{margin:0 0 6px;font-size:14px;color:var(--ch)}
+.cl .meta{font-size:12px;color:var(--mut);margin-bottom:8px}.cl ul{margin:0;padding-left:16px;font-size:12px}.cl li{margin:3px 0}.cl li.p{color:var(--or)}
+.kw{display:inline-block;background:var(--lt);color:#7a3212;border-radius:4px;padding:1px 6px;font-size:11px;margin:2px 2px 0 0}
+footer{padding:16px 28px;color:var(--mut);font-size:11px;border-top:1px solid var(--bd);margin-top:20px}
+@media print{nav,.filters{display:none}.tab{display:block!important;page-break-before:always}}
+</style></head><body>
+<header><div><h1><span>SMOKE SCREEN</span> · Blog Dashboard</h1><small>Live posts scraped from smoke-screen.com · 40 planned Sept–Dec 2026 · GSC 2 Jun–1 Sep 2026 · Volumes Ubersuggest UK · Built 4 Sep 2026</small></div>
+<div><button onclick="window.print()" style="background:var(--or);color:#fff;border:0;padding:8px 14px;border-radius:6px;cursor:pointer">Print / PDF</button></div></header>
+<nav><button class="on" data-t="over">Overview</button><button data-t="cur">Live Blogs</button><button data-t="fut">Planned (40)</button><button data-t="perf">Performance</button><button data-t="cl">Topic Clusters</button><button data-t="kw">Keywords</button></nav>
+<main>
+<section id="over" class="tab on">
+ <div class="kpis" id="kp"></div>
+ <div class="grid"><div class="card"><h3>Posts by industry (live vs planned)</h3><canvas id="c1" height="230"></canvas></div>
+ <div class="card"><h3>Planned posts by month & funnel stage</h3><canvas id="c2" height="230"></canvas></div>
+ <div class="card"><h3>Where blog clicks come from (live, 92 days)</h3><canvas id="c3" height="230"></canvas></div>
+ <div class="card"><h3>Planned posts by product family</h3><canvas id="c4" height="230"></canvas></div></div>
+ <div class="card"><h3>What the numbers say</h3><ul style="margin:0;padding-left:18px;line-height:1.6">
+ <li><b>Two posts carry the blog.</b> Ajax Ready (63 clicks, 4,543 impressions, 827 AI Overview impressions) and Sentinel Go (20 / 1,761) account for 77% of blog clicks. Everything else combined is 25 clicks.</li>
+ <li><b>27 of 38 live posts have zero clicks</b> in 92 days. Most are opinion or company-news pieces with no search intent — fine as brand content, but they will not grow traffic.</li>
+ <li><b>Three refreshes beat thirty new posts:</b> Martyn's Law (18,100/mo, position 15), Security Smoke vs Fog (1,170 impressions, position 13.5) and the Standards guide (position 7.4). All three are in the plan.</li>
+ <li><b>The 40 planned posts are problem-first:</b> 25 are Missing-gap topics no competitor owns, 33 go through Content Lab trials, 7 publish direct. Combined UK demand ~24,900 searches/month.</li>
+ <li><b>Industry coverage flips:</b> live content is 60% cross-industry/opinion; planned content adds Warehouse, Jewellers, Pharmacy, Banking/ATM, Education, Rural, Trade and Automotive verticals Density and PROTECT are moving into.</li></ul></div>
+</section>
+<section id="cur" class="tab"><div class="filters"><input id="qc" placeholder="Search title, keyword, product…"><select id="fci"></select><select id="fcc"></select><select id="fcp"></select><select id="fcr"><option value="">All recommendations</option><option>REFRESH</option><option>DEFEND</option><option>CONSOLIDATE</option><option>Keep</option></select><span class="n" id="nc"></span></div><div id="tc"></div></section>
+<section id="fut" class="tab"><div class="filters"><input id="qf" placeholder="Search title, keyword, evidence…"><select id="ffm"></select><select id="ffi"></select><select id="ffc"></select><select id="ffg"></select><select id="fff"></select><span class="n" id="nf"></span></div><div id="tf"></div></section>
+<section id="perf" class="tab"><div class="grid"><div class="card"><h3>Impressions vs clicks — top 15 live posts</h3><canvas id="c5" height="300"></canvas></div><div class="card"><h3>Signal (Content Lab thresholds applied to 92 days)</h3><canvas id="c6" height="300"></canvas></div></div><div id="tp"></div></section>
+<section id="cl" class="tab"><p style="color:var(--mut);margin-top:0">Each cluster groups the live posts that already exist (grey) and the planned posts that extend it (orange). A cluster with no live post is a net-new topic area.</p><div class="clusters" id="cls"></div></section>
+<section id="kw" class="tab"><div class="filters"><input id="qk" placeholder="Search keyword…"><span class="n" id="nk"></span></div><div id="tk"></div></section>
+</main>
+<footer>Sources: smoke-screen.com blog and topic archives (scraped 4 Sep 2026); Google Search Console smoke-screen.com property, 2 Jun–1 Sep 2026 (clicks, impressions, position, AI Overview impressions); Ubersuggest UK locId 2826 (volume, KD, CPC). 'legacy' dates = pre-relaunch posts where the archive does not expose a publish date. Gap types: Missing = no Smoke Screen page in top 100 while competitors rank; Weak = Smoke Screen 21–100; Striking distance = 4–20; Defend = 1–3. Point-in-time analysis. Prepared by Ved.</footer>
+<script>
+async function boot(){
+ let D;
+ try{const r=await fetch('data/dashboard.json?ts='+Date.now());D=await r.json();}
+ catch(e){document.querySelector('main').innerHTML='<div class="card">Could not load data/dashboard.json — open this page over http(s) (GitHub Pages), not file://</div>';return;}
+ const C=D.current,F=D.future;
+ if(D.meta){document.querySelector('header small').textContent=`Live posts scraped from smoke-screen.com · 40 planned Sept–Dec 2026 · GSC ${D.meta.gsc_window} · Volumes Ubersuggest UK · Data updated ${D.meta.last_sync||D.meta.generated}`;}
+
+const $=s=>document.querySelector(s);const uniq=(a,k)=>[...new Set(a.map(x=>x[k]))].sort();
+document.querySelectorAll('nav button').forEach(b=>b.onclick=()=>{document.querySelectorAll('nav button').forEach(x=>x.classList.remove('on'));b.classList.add('on');document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('on',t.id===b.dataset.t));});
+const sum=(a,k)=>a.reduce((s,x)=>s+(+x[k]||0),0);
+const cl=sum(C,'clicks'),im=sum(C,'impressions');
+$('#kp').innerHTML=[[C.length,'live blog posts'],[F.length,'planned Sept–Dec'],[cl,'blog clicks · 92 days'],[im.toLocaleString(),'blog impressions'],[(cl/im*100).toFixed(1)+'%','blog CTR'],[C.filter(x=>!x.clicks).length,'live posts with 0 clicks'],[sum(C,'aio'),'AI Overview impressions'],[sum(F,'volume').toLocaleString(),'planned demand /mo']].map(([a,b])=>`<div class="kpi"><b>${a}</b><span>${b}</span></div>`).join('');
+const OR='#D95C2E',CH='#1E2535',GR='#A9B2C3';Chart.defaults.font.family='Arial';Chart.defaults.font.size=11;
+const inds=[...new Set([...C.map(x=>x.industry),...F.map(x=>x.industry)])].sort();
+new Chart($('#c1'),{type:'bar',data:{labels:inds,datasets:[{label:'Live',data:inds.map(i=>C.filter(x=>x.industry===i).length),backgroundColor:GR},{label:'Planned',data:inds.map(i=>F.filter(x=>x.industry===i).length),backgroundColor:OR}]},options:{indexAxis:'y',plugins:{legend:{position:'bottom'}},scales:{x:{stacked:true,ticks:{stepSize:2}},y:{stacked:true}}}});
+const months=['Sep 2026','Oct 2026','Nov 2026','Dec 2026'];
+new Chart($('#c2'),{type:'bar',data:{labels:months,datasets:['TOFU','MOFU','BOFU'].map((f,i)=>({label:f,data:months.map(m=>F.filter(x=>x.month===m&&x.funnel===f).length),backgroundColor:[GR,'#5B7BB5',OR][i]}))},options:{plugins:{legend:{position:'bottom'}},scales:{x:{stacked:true},y:{stacked:true,ticks:{stepSize:2}}}}});
+const top=[...C].sort((a,b)=>b.clicks-a.clicks);const t5=top.slice(0,5);
+new Chart($('#c3'),{type:'doughnut',data:{labels:[...t5.map(x=>x.title.slice(0,38)+'…'),'All other posts'],datasets:[{data:[...t5.map(x=>x.clicks),cl-sum(t5,'clicks')],backgroundColor:[OR,'#E8895F','#F2B69A',CH,'#5B7BB5',GR]}]},options:{plugins:{legend:{position:'right',labels:{boxWidth:10}}}}});
+const prods=uniq(F,'product');
+new Chart($('#c4'),{type:'bar',data:{labels:prods,datasets:[{label:'Planned posts',data:prods.map(p=>F.filter(x=>x.product===p).length),backgroundColor:OR}]},options:{indexAxis:'y',plugins:{legend:{display:false}},scales:{x:{ticks:{stepSize:2}}}}});
+const t15=[...C].sort((a,b)=>b.impressions-a.impressions).slice(0,15);
+new Chart($('#c5'),{type:'bar',data:{labels:t15.map(x=>x.title.slice(0,34)+'…'),datasets:[{label:'Impressions',data:t15.map(x=>x.impressions),backgroundColor:GR,yAxisID:'y'},{label:'Clicks',data:t15.map(x=>x.clicks),backgroundColor:OR,yAxisID:'y1'}]},options:{indexAxis:'y',plugins:{legend:{position:'bottom'}},scales:{y:{ticks:{font:{size:10}}},x:{type:'logarithmic',position:'bottom'},y1:{display:false}}}});
+const sig=x=>x.clicks>=3||(x.impressions>=50&&x.ctr>=1)?'Strong':x.impressions>=50?'Weak CTR':x.impressions>0?'Low demand':'No data';
+const sg=['Strong','Weak CTR','Low demand','No data'];
+new Chart($('#c6'),{type:'doughnut',data:{labels:sg,datasets:[{data:sg.map(s=>C.filter(x=>sig(x)===s).length),backgroundColor:['#1E7A3A','#E0A800',GR,'#D9DDE5']}]},options:{plugins:{legend:{position:'right'}}}});
+// tables
+function table(el,cols,rows,sortKey){let dir=1,key=sortKey;const render=()=>{const rs=[...rows].sort((a,b)=>{const x=a[key],y=b[key];if(x==null)return 1;if(y==null)return -1;return (typeof x==='number'&&typeof y==='number'?x-y:String(x).localeCompare(String(y)))*dir});
+ el.innerHTML=`<table><thead><tr>${cols.map(c=>`<th data-k="${c.k}">${c.h}${c.k===key?(dir>0?' ▲':' ▼'):''}</th>`).join('')}</tr></thead><tbody>${rs.map(r=>`<tr>${cols.map(c=>`<td>${c.f?c.f(r):(r[c.k]??'–')}</td>`).join('')}</tr>`).join('')}</tbody></table>`;
+ el.querySelectorAll('th').forEach(th=>th.onclick=()=>{const k=th.dataset.k;dir=k===key?-dir:1;key=k;render();});};render();}
+const pill=(v,cls)=>`<span class="pill ${cls||String(v).split(' ')[0]}">${v}</span>`;
+const fill=(id,arr,k,label)=>{$(id).innerHTML=`<option value="">${label}</option>`+uniq(arr,k).map(v=>`<option>${v}</option>`).join('');};
+fill('#fci',C,'industry','All industries');fill('#fcc',C,'cluster','All clusters');fill('#fcp',C,'product','All products');
+fill('#ffm',F,'month','All months');fill('#ffi',F,'industry','All industries');fill('#ffc',F,'cluster','All clusters');fill('#ffg',F,'gap','All gap types');fill('#fff',F,'funnel','All funnel stages');
+const curCols=[{h:'Title',k:'title',f:r=>`<a href="${r.url}" target="_blank">${r.title}</a><div style="color:#889;font-size:11px">${r.slug}</div>`},{h:'Date',k:'date'},{h:'Author',k:'author'},{h:'Industry',k:'industry'},{h:'Product',k:'product'},{h:'Cluster',k:'cluster'},{h:'Funnel',k:'funnel',f:r=>pill(r.funnel)},{h:'Clicks',k:'clicks'},{h:'Impr.',k:'impressions',f:r=>r.impressions.toLocaleString()},{h:'CTR',k:'ctr',f:r=>r.ctr+'%'},{h:'Pos.',k:'position'},{h:'AIO',k:'aio'},{h:'Recommendation',k:'recommendation',f:r=>`<span class="rec ${/REFRESH|CONSOLIDATE|DEFEND/.test(r.recommendation)?'hot':''}">${r.recommendation}</span>`}];
+function drawCur(){const q=$('#qc').value.toLowerCase(),i=$('#fci').value,c=$('#fcc').value,p=$('#fcp').value,r=$('#fcr').value;const rows=C.filter(x=>(!q||(x.title+x.keyword+x.product+x.category).toLowerCase().includes(q))&&(!i||x.industry===i)&&(!c||x.cluster===c)&&(!p||x.product===p)&&(!r||x.recommendation.startsWith(r)));$('#nc').textContent=rows.length+' of '+C.length+' posts';table($('#tc'),curCols,rows,'impressions');}
+['#qc','#fci','#fcc','#fcp','#fcr'].forEach(s=>$(s).oninput=$(s).onchange=drawCur);drawCur();
+const futCols=[{h:'Month',k:'month',f:r=>`${r.month}<div style="color:#889;font-size:11px">wk ${r.week}</div>`},{h:'Title',k:'title',f:r=>`<b>${r.title}</b><div style="color:#889;font-size:11px">${r.slug} · ${r.external_id}</div>`},{h:'Keyword',k:'keyword',f:r=>`${r.keyword}<div style="color:#889;font-size:11px">${r.intent}</div>`},{h:'Vol /mo',k:'volume',f:r=>r.volume==null?'GSC':r.volume.toLocaleString()},{h:'KD',k:'kd'},{h:'CPC £',k:'cpc'},{h:'Industry',k:'industry'},{h:'Product',k:'product'},{h:'Cluster',k:'cluster'},{h:'Gap',k:'gap',f:r=>pill(r.gap)},{h:'Action',k:'action'},{h:'Funnel',k:'funnel',f:r=>pill(r.funnel)},{h:'Mode',k:'mode'},{h:'Evidence',k:'evidence',f:r=>`<span style="font-size:12px">${r.evidence}</span><div style="font-size:11px;color:#889">Links → ${r.link}</div>`}];
+function drawFut(){const q=$('#qf').value.toLowerCase();const v=id=>$(id).value;const rows=F.filter(x=>(!q||(x.title+x.keyword+x.evidence+x.product).toLowerCase().includes(q))&&(!v('#ffm')||x.month===v('#ffm'))&&(!v('#ffi')||x.industry===v('#ffi'))&&(!v('#ffc')||x.cluster===v('#ffc'))&&(!v('#ffg')||x.gap===v('#ffg'))&&(!v('#fff')||x.funnel===v('#fff')));$('#nf').textContent=rows.length+' of '+F.length+' posts · '+sum(rows,'volume').toLocaleString()+' searches/mo';table($('#tf'),futCols,rows,'month');}
+['#qf','#ffm','#ffi','#ffc','#ffg','#fff'].forEach(s=>$(s).oninput=$(s).onchange=drawFut);drawFut();
+const mx=Math.max(...C.map(x=>x.impressions));
+table($('#tp'),[{h:'#',k:'rank'},{h:'Title',k:'title',f:r=>`<a href="${r.url}" target="_blank">${r.title}</a>`},{h:'Clicks',k:'clicks'},{h:'Impressions',k:'impressions',f:r=>`${r.impressions.toLocaleString()}<div class="bar"><i style="width:${Math.max(1,r.impressions/mx*100)}%"></i></div>`},{h:'CTR',k:'ctr',f:r=>r.ctr+'%'},{h:'Position',k:'position'},{h:'AIO',k:'aio'},{h:'Signal',k:'signal',f:r=>pill(r.signal,{Strong:'Defend','Weak CTR':'Weak','Low demand':'TOFU','No data':'TOFU'}[r.signal])},{h:'Recommendation',k:'recommendation'}],[...C].sort((a,b)=>b.impressions-a.impressions).map((x,i)=>({...x,rank:i+1,signal:sig(x)})),'rank');
+// clusters
+const allCl=[...new Set([...C.map(x=>x.cluster),...F.map(x=>x.cluster)])].sort((a,b)=>F.filter(x=>x.cluster===b).length-F.filter(x=>x.cluster===a).length);
+$('#cls').innerHTML=allCl.map(c=>{const l=C.filter(x=>x.cluster===c),p=F.filter(x=>x.cluster===c);const kws=[...new Set(p.map(x=>x.keyword))];return `<div class="cl"><h4>${c}</h4><div class="meta">${l.length} live · ${p.length} planned · ${sum(l,'clicks')} clicks · ${sum(p,'volume').toLocaleString()} planned searches/mo · ${[...new Set([...l,...p].map(x=>x.industry))].join(', ')}</div><ul>${l.map(x=>`<li><a href="${x.url}" target="_blank" style="color:#445;text-decoration:none">${x.title}</a></li>`).join('')}${p.map(x=>`<li class="p">${x.month.slice(0,3)} · ${x.title}</li>`).join('')}</ul><div style="margin-top:8px">${kws.map(k=>`<span class="kw">${k}</span>`).join('')}</div></div>`}).join('');
+// keywords
+const KWS=[...F.map(x=>({keyword:x.keyword,volume:x.volume,kd:x.kd,cpc:x.cpc,intent:x.intent,cluster:x.cluster,industry:x.industry,post:x.title,status:'Planned',when:x.month})),...C.map(x=>({keyword:x.keyword,volume:null,kd:null,cpc:null,intent:'—',cluster:x.cluster,industry:x.industry,post:x.title,status:'Live',when:x.date}))];
+function drawKw(){const q=$('#qk').value.toLowerCase();const rows=KWS.filter(x=>!q||(x.keyword+x.cluster+x.post).toLowerCase().includes(q));$('#nk').textContent=rows.length+' keywords';table($('#tk'),[{h:'Keyword',k:'keyword',f:r=>`<b>${r.keyword}</b>`},{h:'Vol /mo',k:'volume',f:r=>r.volume==null?(r.status==='Planned'?'GSC':'–'):r.volume.toLocaleString()},{h:'KD',k:'kd'},{h:'CPC £',k:'cpc'},{h:'Intent',k:'intent'},{h:'Cluster',k:'cluster'},{h:'Industry',k:'industry'},{h:'Post',k:'post'},{h:'Status',k:'status',f:r=>pill(r.status)},{h:'When',k:'when'}],rows,'volume');}
+$('#qk').oninput=drawKw;drawKw();
+
+}
+boot();
+</script></body></html>
