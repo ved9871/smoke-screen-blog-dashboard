@@ -66,14 +66,14 @@ footer{padding:16px 28px;color:var(--mut);font-size:11px;border-top:1px solid va
  <div class="card"><h3>What the AI data says</h3><ul style="margin:0;padding-left:18px;line-height:1.6" id="aisay"></ul></div></div>
 </section>
 </main>
-<footer>Sources: smoke-screen.com blog and topic archives (scraped 4 Sep 2026); Google Search Console smoke-screen.com property, 2 Jun–1 Sep 2026 (clicks, impressions, position, AI Overview impressions); Ubersuggest UK locId 2826 (volume, KD, CPC); GSC 12-month export 6 Sep 2025–5 Sep 2026 and Generative-AI-features export (from 18 May 2026); Bing Webmaster Tools AI reports 7 Sep 2026. 'legacy' dates = pre-relaunch posts where the archive does not expose a publish date. Gap types: Missing = no Smoke Screen page in top 100 while competitors rank; Weak = Smoke Screen 21–100; Striking distance = 4–20; Defend = 1–3. Point-in-time analysis. Prepared by Ved.</footer>
+<footer>Sources: smoke-screen.com blog and topic archives (scraped 4 Sep 2026, re-scraped 26 Nov 2026 — six posts published Sep–Nov added, GSC metrics pending next sync); Google Search Console smoke-screen.com property, 2 Jun–1 Sep 2026 (clicks, impressions, position, AI Overview impressions); Ubersuggest UK locId 2826 (volume, KD, CPC); GSC 12-month export 6 Sep 2025–5 Sep 2026 and Generative-AI-features export (from 18 May 2026); Bing Webmaster Tools AI reports 7 Sep 2026. 'legacy' dates = pre-relaunch posts where the archive does not expose a publish date. Gap types: Missing = no Smoke Screen page in top 100 while competitors rank; Weak = Smoke Screen 21–100; Striking distance = 4–20; Defend = 1–3. Point-in-time analysis. Prepared by Ved.</footer>
 <script>
 async function boot(){
  let D;
  try{const r=await fetch('data/dashboard.json?ts='+Date.now());D=await r.json();}
  catch(e){document.querySelector('main').innerHTML='<div class="card">Could not load data/dashboard.json — open this page over http(s) (GitHub Pages), not file://</div>';return;}
  const C=D.current,F=D.future;
- if(D.meta){document.querySelector('header small').textContent=`Live posts scraped from smoke-screen.com · 40 planned Sept–Dec 2026 · GSC ${D.meta.gsc_window} · Volumes Ubersuggest UK · Data updated ${D.meta.last_sync||D.meta.generated}`;}
+ if(D.meta){document.querySelector('header small').textContent=`Live posts scraped from smoke-screen.com · 40 planned Sept–Dec 2026 · GSC ${D.meta.gsc_window} · Volumes Ubersuggest UK · Blog list updated ${D.meta.blog_archive_scraped||D.meta.generated} · GSC synced ${D.meta.last_sync}`;}
 
 const $=s=>document.querySelector(s);const uniq=(a,k)=>[...new Set(a.map(x=>x[k]))].sort();
 document.querySelectorAll('nav button').forEach(b=>b.onclick=()=>{document.querySelectorAll('nav button').forEach(x=>x.classList.remove('on'));b.classList.add('on');document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('on',t.id===b.dataset.t));});
