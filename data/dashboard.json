@@ -57,7 +57,7 @@
    "impressions": 76,
    "ctr": 1.32,
    "position": 6.7,
-   "aio": 0,
+   "aio": 1,
    "recommendation": "New · early GSC data"
   },
   {
@@ -77,7 +77,7 @@
    "impressions": 262,
    "ctr": 1.15,
    "position": 16.1,
-   "aio": 0,
+   "aio": 40,
    "recommendation": "New · early GSC data"
   },
   {
@@ -97,7 +97,7 @@
    "impressions": 197,
    "ctr": 1.52,
    "position": 6.8,
-   "aio": 0,
+   "aio": 22,
    "recommendation": "New · early GSC data"
   },
   {
@@ -137,7 +137,7 @@
    "impressions": 107,
    "ctr": 0.93,
    "position": 7.5,
-   "aio": 7,
+   "aio": 12,
    "recommendation": "Keep · PR amplify"
   },
   {
@@ -157,7 +157,7 @@
    "impressions": 728,
    "ctr": 1.24,
    "position": 24.3,
-   "aio": 19,
+   "aio": 109,
    "recommendation": "Keep · add internal links"
   },
   {
@@ -177,7 +177,7 @@
    "impressions": 642,
    "ctr": 0.62,
    "position": 12.7,
-   "aio": 69,
+   "aio": 99,
    "recommendation": "Keep · link to Oct home guide"
   },
   {
@@ -197,7 +197,7 @@
    "impressions": 26,
    "ctr": 0.0,
    "position": 11.2,
-   "aio": 0,
+   "aio": 1,
    "recommendation": "REFRESH · pos 15 for 18,100/mo term"
   },
   {
@@ -217,7 +217,7 @@
    "impressions": 44,
    "ctr": 9.09,
    "position": 11.7,
-   "aio": 6,
+   "aio": 10,
    "recommendation": "Keep"
   },
   {
@@ -237,7 +237,7 @@
    "impressions": 22,
    "ctr": 0.0,
    "position": 16.7,
-   "aio": 0,
+   "aio": 2,
    "recommendation": "Keep"
   },
   {
@@ -277,7 +277,7 @@
    "impressions": 70,
    "ctr": 2.86,
    "position": 7.8,
-   "aio": 0,
+   "aio": 7,
    "recommendation": "Keep"
   },
   {
@@ -297,7 +297,7 @@
    "impressions": 5094,
    "ctr": 1.57,
    "position": 15.8,
-   "aio": 827,
+   "aio": 961,
    "recommendation": "DEFEND · top performer, expand with Oct guide"
   },
   {
@@ -357,7 +357,7 @@
    "impressions": 2610,
    "ctr": 2.07,
    "position": 9.8,
-   "aio": 273,
+   "aio": 397,
    "recommendation": "DEFEND · 1,761 imp — add Nov vacant-property link"
   },
   {
@@ -377,7 +377,7 @@
    "impressions": 1121,
    "ctr": 0.71,
    "position": 13.3,
-   "aio": 128,
+   "aio": 166,
    "recommendation": "REFRESH · 1,170 imp / 10 clicks, pos 13.5"
   },
   {
@@ -397,7 +397,7 @@
    "impressions": 48,
    "ctr": 0.0,
    "position": 5.2,
-   "aio": 6,
+   "aio": 1,
    "recommendation": "REFRESH · Dec EN 50131-8 pillar"
   },
   {
@@ -417,7 +417,7 @@
    "impressions": 26,
    "ctr": 0.0,
    "position": 6.8,
-   "aio": 0,
+   "aio": 1,
    "recommendation": "Keep · add comparison table"
   },
   {
@@ -437,7 +437,7 @@
    "impressions": 20,
    "ctr": 0.0,
    "position": 7.4,
-   "aio": 0,
+   "aio": 1,
    "recommendation": "Keep · feeds Sept generator guide"
   },
   {
@@ -457,7 +457,7 @@
    "impressions": 211,
    "ctr": 0.0,
    "position": 8,
-   "aio": 0,
+   "aio": 34,
    "recommendation": "Keep · series stalled at E01"
   },
   {
@@ -477,7 +477,7 @@
    "impressions": 89,
    "ctr": 2.25,
    "position": 9.8,
-   "aio": 0,
+   "aio": 9,
    "recommendation": "REFRESH → Sept 'Will an Alarm Deter a Burglar?'"
   },
   {
@@ -497,7 +497,7 @@
    "impressions": 57,
    "ctr": 0.0,
    "position": 10.6,
-   "aio": 0,
+   "aio": 5,
    "recommendation": "CONSOLIDATE into Nov 'How Fast Is a Burglary?'"
   },
   {
@@ -557,7 +557,7 @@
    "impressions": 16,
    "ctr": 0.0,
    "position": 13.3,
-   "aio": 0,
+   "aio": 1,
    "recommendation": "Keep · link from SA site"
   },
   {
@@ -597,7 +597,7 @@
    "impressions": 185,
    "ctr": 2.16,
    "position": 7.1,
-   "aio": 3,
+   "aio": 31,
    "recommendation": "Keep · link from Dec schools post"
   },
   {
@@ -637,7 +637,7 @@
    "impressions": 31,
    "ctr": 0.0,
    "position": 34,
-   "aio": 0,
+   "aio": 1,
    "recommendation": "Keep · brand heritage"
   },
   {
@@ -657,7 +657,7 @@
    "impressions": 297,
    "ctr": 0.67,
    "position": 8.6,
-   "aio": 24,
+   "aio": 49,
    "recommendation": "Keep · 209 imp"
   },
   {
@@ -737,7 +737,7 @@
    "impressions": 94,
    "ctr": 0.0,
    "position": 10.2,
-   "aio": 5,
+   "aio": 4,
    "recommendation": "Keep · 82 imp"
   },
   {
@@ -797,7 +797,7 @@
    "impressions": 216,
    "ctr": 2.31,
    "position": 6.4,
-   "aio": 0,
+   "aio": 56,
    "recommendation": "Keep (off-topic)"
   },
   {
@@ -837,7 +837,7 @@
    "impressions": 231,
    "ctr": 1.73,
    "position": 6.8,
-   "aio": 0,
+   "aio": 48,
    "recommendation": "Keep (off-topic)"
   },
   {
@@ -2113,84 +2113,77 @@
   },
   "ai": {
    "gsc_ai": {
-    "note": "GSC 'Performance on Search – Generative AI features' — impressions where smoke-screen.com appeared in AI features (AI Overviews / AI Mode). Data begins 18 May 2026. Last export 7 Sep 2026; not available via the GSC API, so these figures refresh only with a new export.",
-    "window": "2026-05-18 to 2026-09-05",
-    "impressions": 13020,
-    "daily_avg": 117,
+    "note": "GSC 'Performance on Search – Generative AI features' — impressions where smoke-screen.com appeared in AI features (AI Overviews / AI Mode). Read from the GSC UI on 26 Nov 2026 (not available via API). Prior reading: 13,020 impressions over 18 May–5 Sep (~117/day).",
+    "window": "2026-08-25 to 2026-11-24",
+    "impressions": 16904,
+    "daily_avg": 184,
+    "desktop_share_pct": 68.4,
     "top_pages": [
      {
       "p": "/ (homepage)",
-      "impressions": 10381
+      "impressions": 12966
      },
      {
       "p": "/smoke-screen-ajax-ready-security-fog/",
-      "impressions": 933
+      "impressions": 961
      },
      {
-      "p": "Sentinel S35 manual PDF",
-      "impressions": 467
-     },
-     {
-      "p": "/battery-powered-security-fog-sentinel-go/",
-      "impressions": 296
-     },
-     {
-      "p": "/applications/retail-security/",
-      "impressions": 269
-     },
-     {
-      "p": "/faqs/",
-      "impressions": 201
-     },
-     {
-      "p": "Interface manual PDF",
-      "impressions": 192
-     },
-     {
-      "p": "/applications/warehouse-security/",
-      "impressions": 178
+      "p": "Sentinel S35 manual (PDF)",
+      "impressions": 561
      },
      {
       "p": "/how-it-works/",
-      "impressions": 158
+      "impressions": 431
      },
      {
-      "p": "/security-smoke-vs-security-fog-whats-the-real-difference/",
-      "impressions": 150
+      "p": "/battery-powered-security-fog-sentinel-go/",
+      "impressions": 397
+     },
+     {
+      "p": "Interface manual (PDF)",
+      "impressions": 274
+     },
+     {
+      "p": "/concept-smoke-screen-and-concept-smoke-systems/",
+      "impressions": 231
+     },
+     {
+      "p": "/applications/retail-security/",
+      "impressions": 216
+     },
+     {
+      "p": "/applications/warehouse-security/",
+      "impressions": 200
+     },
+     {
+      "p": "/faqs/",
+      "impressions": 198
      }
     ],
     "countries": [
      {
       "c": "United Kingdom",
-      "impressions": 6123
+      "impressions": 8371
      },
      {
       "c": "United States",
-      "impressions": 2793
-     },
-     {
-      "c": "Nigeria",
-      "impressions": 523
+      "impressions": 3382
      },
      {
       "c": "Canada",
-      "impressions": 395
+      "impressions": 693
+     },
+     {
+      "c": "Brazil",
+      "impressions": 362
      },
      {
       "c": "India",
-      "impressions": 304
+      "impressions": 310
      },
      {
-      "c": "Australia",
-      "impressions": 192
-     },
-     {
-      "c": "Germany",
-      "impressions": 178
-     },
-     {
-      "c": "South Africa",
-      "impressions": 131
+      "c": "Nigeria",
+      "impressions": 270
      }
     ]
    },
@@ -2246,7 +2239,7 @@
      }
     ]
    },
-   "as_of": "2026-09-07"
+   "as_of": "2026-11-26"
   },
   "blog_archive_scraped": "2026-11-26"
  }
