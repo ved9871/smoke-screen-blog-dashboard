@@ -42,18 +42,18 @@ footer{padding:16px 28px;color:var(--mut);font-size:11px;border-top:1px solid va
  <div class="kpis" id="kp"></div>
  <div class="grid"><div class="card"><h3>Posts by industry (live vs planned)</h3><canvas id="c1" height="230"></canvas></div>
  <div class="card"><h3>Planned posts by month & funnel stage</h3><canvas id="c2" height="230"></canvas></div>
- <div class="card"><h3>Where blog clicks come from (live, 92 days)</h3><canvas id="c3" height="230"></canvas></div>
+ <div class="card"><h3>Where blog clicks come from (live, 90 days)</h3><canvas id="c3" height="230"></canvas></div>
  <div class="card"><h3>Planned posts by product family</h3><canvas id="c4" height="230"></canvas></div></div>
  <div class="card"><h3>What the numbers say</h3><ul style="margin:0;padding-left:18px;line-height:1.6">
- <li><b>Two posts carry the blog.</b> Ajax Ready (63 clicks, 4,543 impressions, 827 AI Overview impressions) and Sentinel Go (20 / 1,761) account for 77% of blog clicks. Everything else combined is 25 clicks.</li>
- <li><b>27 of 38 live posts have zero clicks</b> in 92 days. Most are opinion or company-news pieces with no search intent — fine as brand content, but they will not grow traffic.</li>
- <li><b>Three refreshes beat thirty new posts:</b> Martyn's Law (18,100/mo, position 15), Security Smoke vs Fog (1,170 impressions, position 13.5) and the Standards guide (position 7.4). All three are in the plan.</li>
+ <li><b>Two posts carry the blog.</b> Ajax Ready (80 clicks, 5,094 impressions) and Sentinel Go (54 / 2,610) account for 72% of blog clicks in the last 90 days. Everything else combined is 52 clicks — but that long tail is growing (was 25 in the June–Sep window).</li>
+ <li><b>28 of 44 live posts have zero clicks</b> in 90 days. Most are opinion or company-news pieces with no search intent — fine as brand content, but they will not grow traffic.</li>
+ <li><b>Refreshes still beat new posts:</b> Security Smoke vs Fog (1,121 impressions, position 13.3) and Retail Theft Prevention (728 impressions, position 24.3) have demand but rank off page 1. The Martyn's Law cluster now has two live posts ranking pos 8–11 on low impressions — the 'Active Delay' update draft should consolidate them.</li>
  <li><b>The 40 planned posts are problem-first:</b> 25 are Missing-gap topics no competitor owns, 33 go through Content Lab trials, 7 publish direct. Combined UK demand ~24,900 searches/month.</li>
  <li><b>Industry coverage flips:</b> live content is 60% cross-industry/opinion; planned content adds Warehouse, Jewellers, Pharmacy, Banking/ATM, Education, Rural, Trade and Automotive verticals Density and PROTECT are moving into.</li></ul></div>
 </section>
 <section id="cur" class="tab"><div class="filters"><input id="qc" placeholder="Search title, keyword, product…"><select id="fci"></select><select id="fcc"></select><select id="fcp"></select><select id="fcr"><option value="">All recommendations</option><option>REFRESH</option><option>DEFEND</option><option>CONSOLIDATE</option><option>Keep</option></select><span class="n" id="nc"></span></div><div id="tc"></div></section>
 <section id="fut" class="tab"><div class="filters"><input id="qf" placeholder="Search title, keyword, evidence…"><select id="ffm"></select><select id="ffi"></select><select id="ffc"></select><select id="ffg"></select><select id="fff"></select><span class="n" id="nf"></span></div><div id="tf"></div></section>
-<section id="perf" class="tab"><div class="grid"><div class="card"><h3>Impressions vs clicks — top 15 live posts</h3><canvas id="c5" height="300"></canvas></div><div class="card"><h3>Signal (Content Lab thresholds applied to 92 days)</h3><canvas id="c6" height="300"></canvas></div></div><div id="tp"></div></section>
+<section id="perf" class="tab"><div class="grid"><div class="card"><h3>Impressions vs clicks — top 15 live posts</h3><canvas id="c5" height="300"></canvas></div><div class="card"><h3>Signal (Content Lab thresholds applied to 90 days)</h3><canvas id="c6" height="300"></canvas></div></div><div id="tp"></div></section>
 <section id="cl" class="tab"><p style="color:var(--mut);margin-top:0">Each cluster groups the live posts that already exist (grey) and the planned posts that extend it (orange). A cluster with no live post is a net-new topic area.</p><div class="clusters" id="cls"></div></section>
 <section id="kw" class="tab"><div class="filters"><input id="qk" placeholder="Search keyword…"><span class="n" id="nk"></span></div><div id="tk"></div></section>
 <section id="ai" class="tab">
@@ -66,7 +66,7 @@ footer{padding:16px 28px;color:var(--mut);font-size:11px;border-top:1px solid va
  <div class="card"><h3>What the AI data says</h3><ul style="margin:0;padding-left:18px;line-height:1.6" id="aisay"></ul></div></div>
 </section>
 </main>
-<footer>Sources: smoke-screen.com blog and topic archives (scraped 4 Sep 2026, re-scraped 26 Nov 2026 — six posts published Sep–Nov added, GSC metrics pending next sync); Google Search Console smoke-screen.com property, 2 Jun–1 Sep 2026 (clicks, impressions, position, AI Overview impressions); Ubersuggest UK locId 2826 (volume, KD, CPC); GSC 12-month export 6 Sep 2025–5 Sep 2026 and Generative-AI-features export (from 18 May 2026); Bing Webmaster Tools AI reports 7 Sep 2026. 'legacy' dates = pre-relaunch posts where the archive does not expose a publish date. Gap types: Missing = no Smoke Screen page in top 100 while competitors rank; Weak = Smoke Screen 21–100; Striking distance = 4–20; Defend = 1–3. Point-in-time analysis. Prepared by Ved.</footer>
+<footer>Sources: smoke-screen.com blog and topic archives (scraped 4 Sep 2026, re-scraped 26 Nov 2026 — six posts published Sep–Nov added, GSC metrics pending next sync); Google Search Console smoke-screen.com property, 25 Aug–23 Nov 2026 via API (clicks, impressions, position; AIO column is from the 7 Sep export — the API does not expose AI-feature data); Ubersuggest UK locId 2826 (volume, KD, CPC); GSC 12-month API pull 24 Nov 2025–23 Nov 2026; Generative-AI-features and Bing Webmaster Tools AI reports as of 7 Sep 2026 exports. 'legacy' dates = pre-relaunch posts where the archive does not expose a publish date. Gap types: Missing = no Smoke Screen page in top 100 while competitors rank; Weak = Smoke Screen 21–100; Striking distance = 4–20; Defend = 1–3. Point-in-time analysis. Prepared by Ved.</footer>
 <script>
 async function boot(){
  let D;
@@ -79,7 +79,7 @@ const $=s=>document.querySelector(s);const uniq=(a,k)=>[...new Set(a.map(x=>x[k]
 document.querySelectorAll('nav button').forEach(b=>b.onclick=()=>{document.querySelectorAll('nav button').forEach(x=>x.classList.remove('on'));b.classList.add('on');document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('on',t.id===b.dataset.t));});
 const sum=(a,k)=>a.reduce((s,x)=>s+(+x[k]||0),0);
 const cl=sum(C,'clicks'),im=sum(C,'impressions');
-$('#kp').innerHTML=[[C.length,'live blog posts'],[F.length,'planned Sept–Dec'],[cl,'blog clicks · 92 days'],[im.toLocaleString(),'blog impressions'],[(cl/im*100).toFixed(1)+'%','blog CTR'],[C.filter(x=>!x.clicks).length,'live posts with 0 clicks'],[sum(C,'aio'),'AI Overview impressions'],[sum(F,'volume').toLocaleString(),'planned demand /mo'],[F.filter(x=>/^Selected/.test(x.status)).length,'selected · in production']].map(([a,b])=>`<div class="kpi"><b>${a}</b><span>${b}</span></div>`).join('');
+$('#kp').innerHTML=[[C.length,'live blog posts'],[F.length,'planned Sept–Dec'],[cl,'blog clicks · 90 days'],[im.toLocaleString(),'blog impressions'],[(cl/im*100).toFixed(1)+'%','blog CTR'],[C.filter(x=>!x.clicks).length,'live posts with 0 clicks'],[sum(C,'aio'),'AI Overview impressions'],[sum(F,'volume').toLocaleString(),'planned demand /mo'],[F.filter(x=>/^Selected/.test(x.status)).length,'selected · in production']].map(([a,b])=>`<div class="kpi"><b>${a}</b><span>${b}</span></div>`).join('');
 const OR='#D95C2E',CH='#1E2535',GR='#A9B2C3';Chart.defaults.font.family='Arial';Chart.defaults.font.size=11;
 const inds=[...new Set([...C.map(x=>x.industry),...F.map(x=>x.industry)])].sort();
 new Chart($('#c1'),{type:'bar',data:{labels:inds,datasets:[{label:'Live',data:inds.map(i=>C.filter(x=>x.industry===i).length),backgroundColor:GR},{label:'Planned',data:inds.map(i=>F.filter(x=>x.industry===i).length),backgroundColor:OR}]},options:{indexAxis:'y',plugins:{legend:{position:'bottom'}},scales:{x:{stacked:true,ticks:{stepSize:2}},y:{stacked:true}}}});
@@ -120,17 +120,17 @@ $('#qk').oninput=drawKw;drawKw();
 
 // 12-month & AI tab
 if(D.meta&&D.meta.gsc12){const G=D.meta.gsc12,A=D.meta.ai||{};
-$('#kpai').innerHTML=[[G.clicks.toLocaleString(),'clicks · 12 months (site)'],[G.impressions.toLocaleString(),'impressions · 12 months'],[G.ctr+'%','12-month CTR'],[(A.gsc_ai?A.gsc_ai.impressions.toLocaleString():'–'),'Google AI-feature impressions (since 18 May)'],[(A.bing_ai?A.bing_ai.total_citations:'–'),'Bing AI / Copilot citations'],['+675%','impressions Aug 26 vs Sep 25']].map(([a,b])=>`<div class="kpi"><b>${a}</b><span>${b}</span></div>`).join('');
+$('#kpai').innerHTML=[[G.clicks.toLocaleString(),'clicks · 12 months (site)'],[G.impressions.toLocaleString(),'impressions · 12 months'],[G.ctr+'%','12-month CTR'],[(A.gsc_ai?A.gsc_ai.impressions.toLocaleString():'–'),'Google AI-feature impressions (since 18 May)'],[(A.bing_ai?A.bing_ai.total_citations:'–'),'Bing AI / Copilot citations'],['+475%','clicks Oct 26 vs Dec 25']].map(([a,b])=>`<div class="kpi"><b>${a}</b><span>${b}</span></div>`).join('');
 new Chart($('#c7'),{data:{labels:G.monthly.map(x=>x.m),datasets:[{type:'bar',label:'Impressions',data:G.monthly.map(x=>x.impressions),backgroundColor:GR,yAxisID:'y'},{type:'line',label:'Clicks',data:G.monthly.map(x=>x.clicks),borderColor:OR,backgroundColor:OR,yAxisID:'y1',tension:.3}]},options:{plugins:{legend:{position:'bottom'}},scales:{y:{position:'left'},y1:{position:'right',grid:{display:false}}}}});
 table($('#tq12'),[{h:'Query',k:'q',f:r=>`<b>${r.q}</b>`},{h:'Clicks',k:'clicks'},{h:'Impr.',k:'impressions',f:r=>r.impressions.toLocaleString()},{h:'Pos.',k:'pos'}],G.top_queries,'clicks');
 table($('#tc12'),[{h:'Country',k:'c'},{h:'Clicks',k:'clicks'},{h:'Impr.',k:'impressions',f:r=>r.impressions.toLocaleString()}],G.countries,'clicks');
 if(A.gsc_ai)table($('#taip'),[{h:'Page',k:'p'},{h:'AI-feature impressions',k:'impressions',f:r=>r.impressions.toLocaleString()}],A.gsc_ai.top_pages,'impressions');
 if(A.bing_ai)table($('#tbing'),[{h:'Page',k:'p'},{h:'Citations',k:'citations'}],A.bing_ai.top_cited_pages,'citations');
 $('#aisay').innerHTML=[
-'<b>The site is on a steep climb:</b> monthly impressions grew from 914 (Sep 25) to 21,150 (Aug 26) and clicks from 53 to 411 — the January relaunch and content work is compounding.',
-'<b>Google AI features now show the site ~117 times a day</b> (13,020 impressions since tracking began 18 May 26). The homepage takes 80% — the informational pages (FAQs, How It Works, applications) must take more of this load.',
-'<b>Bing/Copilot cites the legacy us.smoke-screen.com 115+ times.</b> AI engines are grounding answers in an outdated property — redirect or refresh it.',
-'<b>Manual PDFs still leak clicks at 12-month scale:</b> S35 manual alone took 714 clicks / 13.8k impressions. Conversion to indexable HTML pages stays a top technical priority.',
+'<b>The climb has levelled into a high plateau:</b> monthly impressions grew from 1,071 (Dec 25) to 22,409 (Oct 26) — a 21× rise — and clicks from 85 to 489. Sep–Nov is holding ~20–22k impressions and 360–490 clicks a month (Nov is partial, to the 23rd).',
+'<b>Google AI features showed the site ~117 times a day</b> (13,020 impressions, 18 May–5 Sep export; the GSC API does not expose this report, so these figures refresh only with a new export). The homepage takes 80% — the informational pages (FAQs, How It Works, applications) must take more of this load.',
+'<b>Bing/Copilot cites the legacy us.smoke-screen.com 115+ times</b> (7 Sep export). AI engines are grounding answers in an outdated property — redirect or refresh it.',
+'<b>Manual PDFs still leak clicks at 12-month scale:</b> S35 manual alone took 675 clicks / 13.3k impressions. Conversion to indexable HTML pages stays a top technical priority.',
 '<b>Non-brand demand is visible but unwon:</b> \'security smoke\' family + \'security fog (generator)\' = 10k+ impressions at positions 10–24. The ten selected posts target exactly this layer.'
 ].map(x=>`<li>${x}</li>`).join('');}
 

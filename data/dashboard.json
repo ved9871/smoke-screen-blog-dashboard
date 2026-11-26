@@ -18,7 +18,7 @@
    "ctr": 0.0,
    "position": 0,
    "aio": 0,
-   "recommendation": "New · awaiting GSC data"
+   "recommendation": "New · early GSC data"
   },
   {
    "status": "Live",
@@ -38,7 +38,7 @@
    "ctr": 0.0,
    "position": 0,
    "aio": 0,
-   "recommendation": "New · awaiting GSC data"
+   "recommendation": "New · early GSC data"
   },
   {
    "status": "Live",
@@ -53,12 +53,12 @@
    "cluster": "Company news",
    "funnel": "TOFU",
    "keyword": "smoke screen open day",
-   "clicks": 0,
-   "impressions": 0,
-   "ctr": 0.0,
-   "position": 0,
+   "clicks": 1,
+   "impressions": 76,
+   "ctr": 1.32,
+   "position": 6.7,
    "aio": 0,
-   "recommendation": "New · awaiting GSC data"
+   "recommendation": "New · early GSC data"
   },
   {
    "status": "Live",
@@ -73,12 +73,12 @@
    "cluster": "Product education",
    "funnel": "MOFU",
    "keyword": "security fog system types",
-   "clicks": 0,
-   "impressions": 0,
-   "ctr": 0.0,
-   "position": 0,
+   "clicks": 3,
+   "impressions": 262,
+   "ctr": 1.15,
+   "position": 16.1,
    "aio": 0,
-   "recommendation": "New · awaiting GSC data"
+   "recommendation": "New · early GSC data"
   },
   {
    "status": "Live",
@@ -93,12 +93,12 @@
    "cluster": "Retail crime",
    "funnel": "TOFU",
    "keyword": "pokemon card theft uk",
-   "clicks": 0,
-   "impressions": 0,
-   "ctr": 0.0,
-   "position": 0,
+   "clicks": 3,
+   "impressions": 197,
+   "ctr": 1.52,
+   "position": 6.8,
    "aio": 0,
-   "recommendation": "New · awaiting GSC data"
+   "recommendation": "New · early GSC data"
   },
   {
    "status": "Live",
@@ -114,11 +114,11 @@
    "funnel": "TOFU",
    "keyword": "martyn's law what to do now",
    "clicks": 0,
-   "impressions": 0,
+   "impressions": 44,
    "ctr": 0.0,
-   "position": 0,
+   "position": 8.3,
    "aio": 0,
-   "recommendation": "New · feeds Martyn's Law 'Active Delay' update draft"
+   "recommendation": "New · early GSC data"
   },
   {
    "status": "Live",
@@ -133,10 +133,10 @@
    "cluster": "Retail crime",
    "funnel": "TOFU",
    "keyword": "retail crime security fog",
-   "clicks": 0,
-   "impressions": 63,
-   "ctr": 0.0,
-   "position": 9.35,
+   "clicks": 1,
+   "impressions": 107,
+   "ctr": 0.93,
+   "position": 7.5,
    "aio": 7,
    "recommendation": "Keep · PR amplify"
   },
@@ -153,10 +153,10 @@
    "cluster": "Retail crime",
    "funnel": "MOFU",
    "keyword": "retail theft prevention",
-   "clicks": 1,
-   "impressions": 166,
-   "ctr": 0.6,
-   "position": 24.2,
+   "clicks": 9,
+   "impressions": 728,
+   "ctr": 1.24,
+   "position": 24.3,
    "aio": 19,
    "recommendation": "Keep · add internal links"
   },
@@ -173,10 +173,10 @@
    "cluster": "Home",
    "funnel": "MOFU",
    "keyword": "home security fog",
-   "clicks": 2,
-   "impressions": 318,
-   "ctr": 0.63,
-   "position": 12.99,
+   "clicks": 4,
+   "impressions": 642,
+   "ctr": 0.62,
+   "position": 12.7,
    "aio": 69,
    "recommendation": "Keep · link to Oct home guide"
   },
@@ -194,9 +194,9 @@
    "funnel": "TOFU",
    "keyword": "martyn's law",
    "clicks": 0,
-   "impressions": 27,
+   "impressions": 26,
    "ctr": 0.0,
-   "position": 15.41,
+   "position": 11.2,
    "aio": 0,
    "recommendation": "REFRESH · pos 15 for 18,100/mo term"
   },
@@ -213,10 +213,10 @@
    "cluster": "Company news",
    "funnel": "TOFU",
    "keyword": "secured by design event",
-   "clicks": 3,
-   "impressions": 12,
-   "ctr": 25.0,
-   "position": 14.08,
+   "clicks": 4,
+   "impressions": 44,
+   "ctr": 9.09,
+   "position": 11.7,
    "aio": 6,
    "recommendation": "Keep"
   },
@@ -234,9 +234,9 @@
    "funnel": "TOFU",
    "keyword": "women in security",
    "clicks": 0,
-   "impressions": 26,
+   "impressions": 22,
    "ctr": 0.0,
-   "position": 12.77,
+   "position": 16.7,
    "aio": 0,
    "recommendation": "Keep"
   },
@@ -254,9 +254,9 @@
    "funnel": "MOFU",
    "keyword": "cyspag accreditation",
    "clicks": 0,
-   "impressions": 25,
+   "impressions": 13,
    "ctr": 0.0,
-   "position": 5.64,
+   "position": 3.8,
    "aio": 0,
    "recommendation": "Keep · verify 'third UK manufacturer' claim"
   },
@@ -273,10 +273,10 @@
    "cluster": "Retail crime",
    "funnel": "TOFU",
    "keyword": "fight back against retail crime",
-   "clicks": 0,
-   "impressions": 69,
-   "ctr": 0.0,
-   "position": 7.52,
+   "clicks": 2,
+   "impressions": 70,
+   "ctr": 2.86,
+   "position": 7.8,
    "aio": 0,
    "recommendation": "Keep"
   },
@@ -293,10 +293,10 @@
    "cluster": "Integration",
    "funnel": "BOFU",
    "keyword": "ajax smoke screen",
-   "clicks": 63,
-   "impressions": 4543,
-   "ctr": 1.39,
-   "position": 7.1,
+   "clicks": 80,
+   "impressions": 5094,
+   "ctr": 1.57,
+   "position": 15.8,
    "aio": 827,
    "recommendation": "DEFEND · top performer, expand with Oct guide"
   },
@@ -314,9 +314,9 @@
    "funnel": "TOFU",
    "keyword": "skills for security",
    "clicks": 0,
-   "impressions": 10,
+   "impressions": 17,
    "ctr": 0.0,
-   "position": 15.4,
+   "position": 10.9,
    "aio": 0,
    "recommendation": "Keep"
   },
@@ -334,9 +334,9 @@
    "funnel": "TOFU",
    "keyword": "invisifog",
    "clicks": 0,
-   "impressions": 30,
+   "impressions": 25,
    "ctr": 0.0,
-   "position": 7.23,
+   "position": 4.7,
    "aio": 0,
    "recommendation": "Keep (humour)"
   },
@@ -353,10 +353,10 @@
    "cluster": "Product",
    "funnel": "MOFU",
    "keyword": "battery powered security fog",
-   "clicks": 20,
-   "impressions": 1761,
-   "ctr": 1.14,
-   "position": 8.0,
+   "clicks": 54,
+   "impressions": 2610,
+   "ctr": 2.07,
+   "position": 9.8,
    "aio": 273,
    "recommendation": "DEFEND · 1,761 imp — add Nov vacant-property link"
   },
@@ -373,10 +373,10 @@
    "cluster": "Category education",
    "funnel": "TOFU",
    "keyword": "security smoke vs security fog",
-   "clicks": 10,
-   "impressions": 1170,
-   "ctr": 0.85,
-   "position": 13.52,
+   "clicks": 8,
+   "impressions": 1121,
+   "ctr": 0.71,
+   "position": 13.3,
    "aio": 128,
    "recommendation": "REFRESH · 1,170 imp / 10 clicks, pos 13.5"
   },
@@ -393,10 +393,10 @@
    "cluster": "Compliance",
    "funnel": "MOFU",
    "keyword": "security fog standards EN50131-8",
-   "clicks": 3,
-   "impressions": 300,
-   "ctr": 1.0,
-   "position": 7.44,
+   "clicks": 0,
+   "impressions": 48,
+   "ctr": 0.0,
+   "position": 5.2,
    "aio": 6,
    "recommendation": "REFRESH · Dec EN 50131-8 pillar"
   },
@@ -414,9 +414,9 @@
    "funnel": "BOFU",
    "keyword": "s150 vs s55",
    "clicks": 0,
-   "impressions": 50,
+   "impressions": 26,
    "ctr": 0.0,
-   "position": 8.36,
+   "position": 6.8,
    "aio": 0,
    "recommendation": "Keep · add comparison table"
   },
@@ -434,9 +434,9 @@
    "funnel": "MOFU",
    "keyword": "fog output rating",
    "clicks": 0,
-   "impressions": 24,
+   "impressions": 20,
    "ctr": 0.0,
-   "position": 6.79,
+   "position": 7.4,
    "aio": 0,
    "recommendation": "Keep · feeds Sept generator guide"
   },
@@ -454,9 +454,9 @@
    "funnel": "TOFU",
    "keyword": "why is security fog white",
    "clicks": 0,
-   "impressions": 0,
-   "ctr": 0,
-   "position": null,
+   "impressions": 211,
+   "ctr": 0.0,
+   "position": 8,
    "aio": 0,
    "recommendation": "Keep · series stalled at E01"
   },
@@ -473,10 +473,10 @@
    "cluster": "Alarm vs active",
    "funnel": "TOFU",
    "keyword": "intruder alarms",
-   "clicks": 0,
-   "impressions": 22,
-   "ctr": 0.0,
-   "position": 12.5,
+   "clicks": 2,
+   "impressions": 89,
+   "ctr": 2.25,
+   "position": 9.8,
    "aio": 0,
    "recommendation": "REFRESH → Sept 'Will an Alarm Deter a Burglar?'"
   },
@@ -494,9 +494,9 @@
    "funnel": "TOFU",
    "keyword": "burglary speed",
    "clicks": 0,
-   "impressions": 4,
+   "impressions": 57,
    "ctr": 0.0,
-   "position": 18.0,
+   "position": 10.6,
    "aio": 0,
    "recommendation": "CONSOLIDATE into Nov 'How Fast Is a Burglary?'"
   },
@@ -514,9 +514,9 @@
    "funnel": "TOFU",
    "keyword": "winter security checks business",
    "clicks": 0,
-   "impressions": 7,
+   "impressions": 15,
    "ctr": 0.0,
-   "position": 8.14,
+   "position": 7.9,
    "aio": 0,
    "recommendation": "REFRESH · republish Oct 2026"
   },
@@ -534,9 +534,9 @@
    "funnel": "MOFU",
    "keyword": "sentience remote monitoring",
    "clicks": 0,
-   "impressions": 28,
+   "impressions": 0,
    "ctr": 0.0,
-   "position": 7.04,
+   "position": 0,
    "aio": 0,
    "recommendation": "REFRESH → Dec Sentience explainer (fix slug typo)"
   },
@@ -554,9 +554,9 @@
    "funnel": "MOFU",
    "keyword": "security fog armed robbery",
    "clicks": 0,
-   "impressions": 3,
+   "impressions": 16,
    "ctr": 0.0,
-   "position": 5.33,
+   "position": 13.3,
    "aio": 0,
    "recommendation": "Keep · link from SA site"
   },
@@ -574,9 +574,9 @@
    "funnel": "TOFU",
    "keyword": "security fog RAF",
    "clicks": 0,
-   "impressions": 14,
+   "impressions": 21,
    "ctr": 0.0,
-   "position": 8.43,
+   "position": 7.8,
    "aio": 0,
    "recommendation": "Keep"
   },
@@ -593,10 +593,10 @@
    "cluster": "Education",
    "funnel": "TOFU",
    "keyword": "school security fog",
-   "clicks": 1,
-   "impressions": 31,
-   "ctr": 3.23,
-   "position": 10.65,
+   "clicks": 4,
+   "impressions": 185,
+   "ctr": 2.16,
+   "position": 7.1,
    "aio": 3,
    "recommendation": "Keep · link from Dec schools post"
   },
@@ -614,9 +614,9 @@
    "funnel": "TOFU",
    "keyword": "flir integration",
    "clicks": 0,
-   "impressions": 23,
+   "impressions": 13,
    "ctr": 0.0,
-   "position": 9.61,
+   "position": 7,
    "aio": 0,
    "recommendation": "Keep (legacy news)"
   },
@@ -634,9 +634,9 @@
    "funnel": "TOFU",
    "keyword": "smoke screen 30 years",
    "clicks": 0,
-   "impressions": 19,
+   "impressions": 31,
    "ctr": 0.0,
-   "position": 5.68,
+   "position": 34,
    "aio": 0,
    "recommendation": "Keep · brand heritage"
   },
@@ -653,10 +653,10 @@
    "cluster": "Company news",
    "funnel": "TOFU",
    "keyword": "blue duck philosophy",
-   "clicks": 3,
-   "impressions": 209,
-   "ctr": 1.44,
-   "position": 9.85,
+   "clicks": 2,
+   "impressions": 297,
+   "ctr": 0.67,
+   "position": 8.6,
    "aio": 24,
    "recommendation": "Keep · 209 imp"
   },
@@ -674,9 +674,9 @@
    "funnel": "TOFU",
    "keyword": "matt gilmartin",
    "clicks": 0,
-   "impressions": 3,
+   "impressions": 17,
    "ctr": 0.0,
-   "position": 9.0,
+   "position": 7.2,
    "aio": 0,
    "recommendation": "Keep"
   },
@@ -695,8 +695,8 @@
    "keyword": "smoke screen team",
    "clicks": 0,
    "impressions": 0,
-   "ctr": 0,
-   "position": null,
+   "ctr": 0.0,
+   "position": 0,
    "aio": 0,
    "recommendation": "Keep"
   },
@@ -714,9 +714,9 @@
    "funnel": "TOFU",
    "keyword": "security matters podcast",
    "clicks": 0,
-   "impressions": 28,
+   "impressions": 7,
    "ctr": 0.0,
-   "position": 11.25,
+   "position": 6.6,
    "aio": 0,
    "recommendation": "Keep"
   },
@@ -733,10 +733,10 @@
    "cluster": "Opinion",
    "funnel": "TOFU",
    "keyword": "security industry",
-   "clicks": 1,
-   "impressions": 82,
-   "ctr": 1.22,
-   "position": 11.94,
+   "clicks": 0,
+   "impressions": 94,
+   "ctr": 0.0,
+   "position": 10.2,
    "aio": 5,
    "recommendation": "Keep · 82 imp"
   },
@@ -754,9 +754,9 @@
    "funnel": "TOFU",
    "keyword": "networking security industry",
    "clicks": 0,
-   "impressions": 5,
+   "impressions": 4,
    "ctr": 0.0,
-   "position": 6.6,
+   "position": 7.3,
    "aio": 0,
    "recommendation": "Keep"
   },
@@ -774,9 +774,9 @@
    "funnel": "TOFU",
    "keyword": "private security industry",
    "clicks": 0,
-   "impressions": 4,
+   "impressions": 0,
    "ctr": 0.0,
-   "position": 8.0,
+   "position": 0,
    "aio": 0,
    "recommendation": "Keep"
   },
@@ -793,9 +793,9 @@
    "cluster": "Opinion",
    "funnel": "TOFU",
    "keyword": "knife crime campaigns",
-   "clicks": 0,
-   "impressions": 20,
-   "ctr": 0.0,
+   "clicks": 5,
+   "impressions": 216,
+   "ctr": 2.31,
    "position": 6.4,
    "aio": 0,
    "recommendation": "Keep (off-topic)"
@@ -814,9 +814,9 @@
    "funnel": "TOFU",
    "keyword": "police and crime commissioners",
    "clicks": 0,
-   "impressions": 2,
+   "impressions": 0,
    "ctr": 0.0,
-   "position": 10.0,
+   "position": 0,
    "aio": 0,
    "recommendation": "Keep (off-topic)"
   },
@@ -833,10 +833,10 @@
    "cluster": "Opinion",
    "funnel": "TOFU",
    "keyword": "sport reduce crime",
-   "clicks": 1,
-   "impressions": 18,
-   "ctr": 5.56,
-   "position": 17.11,
+   "clicks": 4,
+   "impressions": 231,
+   "ctr": 1.73,
+   "position": 6.8,
    "aio": 0,
    "recommendation": "Keep (off-topic)"
   },
@@ -854,9 +854,9 @@
    "funnel": "TOFU",
    "keyword": "young offender study",
    "clicks": 0,
-   "impressions": 7,
+   "impressions": 0,
    "ctr": 0.0,
-   "position": 7.14,
+   "position": 0,
    "aio": 0,
    "recommendation": "Keep (off-topic)"
   },
@@ -874,9 +874,9 @@
    "funnel": "TOFU",
    "keyword": "criminology partnership",
    "clicks": 0,
-   "impressions": 4,
+   "impressions": 13,
    "ctr": 0.0,
-   "position": 6.25,
+   "position": 5.4,
    "aio": 0,
    "recommendation": "Keep"
   }
@@ -1835,30 +1835,15 @@
  ],
  "meta": {
   "generated": "2026-11-26",
-  "gsc_window": "2026-06-02 to 2026-09-01",
+  "gsc_window": "2026-08-25 to 2026-11-23",
   "source": "Google Search Console · Bing Webmaster Tools · Ubersuggest UK · smoke-screen.com scrape",
-  "last_sync": "2026-09-07",
+  "last_sync": "2026-11-26",
   "gsc12": {
-   "window": "2025-09-06 to 2026-09-05",
-   "clicks": 2883,
-   "impressions": 137826,
-   "ctr": 2.09,
+   "window": "2025-11-24 to 2026-11-23",
+   "clicks": 3899,
+   "impressions": 194044,
+   "ctr": 2.01,
    "monthly": [
-    {
-     "m": "Sep 25",
-     "clicks": 53,
-     "impressions": 914
-    },
-    {
-     "m": "Oct 25",
-     "clicks": 117,
-     "impressions": 1310
-    },
-    {
-     "m": "Nov 25",
-     "clicks": 101,
-     "impressions": 1256
-    },
     {
      "m": "Dec 25",
      "clicks": 85,
@@ -1903,217 +1888,232 @@
      "m": "Aug 26",
      "clicks": 411,
      "impressions": 21150
+    },
+    {
+     "m": "Sep 26",
+     "clicks": 475,
+     "impressions": 20406
+    },
+    {
+     "m": "Oct 26",
+     "clicks": 489,
+     "impressions": 22409
+    },
+    {
+     "m": "Nov 26*",
+     "clicks": 364,
+     "impressions": 19889
     }
    ],
    "top_queries": [
     {
      "q": "smoke screen",
-     "clicks": 296,
-     "impressions": 28769,
-     "pos": 5.29
+     "clicks": 402,
+     "impressions": 42646,
+     "pos": 5.2
     },
     {
      "q": "concept smoke screen",
-     "clicks": 115,
-     "impressions": 2868,
-     "pos": 5.47
+     "clicks": 111,
+     "impressions": 2843,
+     "pos": 5.2
     },
     {
      "q": "concept smoke screen manual",
-     "clicks": 94,
-     "impressions": 282,
-     "pos": 1.8
+     "clicks": 100,
+     "impressions": 279,
+     "pos": 1.7
     },
     {
      "q": "smokescreen.com",
-     "clicks": 55,
-     "impressions": 375,
-     "pos": 1.52
+     "clicks": 63,
+     "impressions": 592,
+     "pos": 1.7
     },
     {
      "q": "smoke screen security",
-     "clicks": 43,
-     "impressions": 1681,
-     "pos": 3.21
+     "clicks": 53,
+     "impressions": 2259,
+     "pos": 5.7
     },
     {
      "q": "smoke screen security fog",
-     "clicks": 39,
-     "impressions": 394,
-     "pos": 2.37
+     "clicks": 47,
+     "impressions": 603,
+     "pos": 7.4
     },
     {
-     "q": "security smoke screen",
-     "clicks": 20,
-     "impressions": 1374,
-     "pos": 3.18
+     "q": "smoke screen.com",
+     "clicks": 29,
+     "impressions": 92,
+     "pos": 1
+    },
+    {
+     "q": "smoke screen for car",
+     "clicks": 28,
+     "impressions": 244,
+     "pos": 7.7
     },
     {
      "q": "smoke screen alarm",
-     "clicks": 18,
-     "impressions": 1465,
-     "pos": 5.74
+     "clicks": 26,
+     "impressions": 1909,
+     "pos": 5.2
     },
     {
-     "q": "sentinel s35",
-     "clicks": 15,
-     "impressions": 112,
-     "pos": 4.47
+     "q": "security smoke screen",
+     "clicks": 25,
+     "impressions": 2002,
+     "pos": 5.5
+    },
+    {
+     "q": "smoke-screen",
+     "clicks": 24,
+     "impressions": 203,
+     "pos": 5.1
     },
     {
      "q": "smoke security system",
-     "clicks": 11,
-     "impressions": 1798,
-     "pos": 13.35
+     "clicks": 20,
+     "impressions": 2513,
+     "pos": 11.8
     },
     {
-     "q": "security smoke system",
-     "clicks": 9,
-     "impressions": 2160,
-     "pos": 11.73
+     "q": "smoke-screen.com",
+     "clicks": 18,
+     "impressions": 38,
+     "pos": 1
     },
     {
-     "q": "security fog",
-     "clicks": 7,
-     "impressions": 1550,
-     "pos": 21.49
+     "q": "car smoke screen",
+     "clicks": 17,
+     "impressions": 416,
+     "pos": 13.1
     },
     {
-     "q": "security fog generator",
-     "clicks": 6,
-     "impressions": 912,
-     "pos": 23.94
-    },
-    {
-     "q": "security smoke",
-     "clicks": 3,
-     "impressions": 2604,
-     "pos": 10.7
-    },
-    {
-     "q": "security smoke machine",
-     "clicks": 3,
-     "impressions": 1352,
-     "pos": 14.18
+     "q": "home security smoke screen",
+     "clicks": 17,
+     "impressions": 125,
+     "pos": 4.1
     }
    ],
    "countries": [
     {
      "c": "United Kingdom",
-     "clicks": 1349,
-     "impressions": 49227
+     "clicks": 1867,
+     "impressions": 69445
     },
     {
      "c": "United States",
-     "clicks": 411,
-     "impressions": 40519
-    },
-    {
-     "c": "South Africa",
-     "clicks": 152,
-     "impressions": 1471
+     "clicks": 603,
+     "impressions": 54075
     },
     {
      "c": "Nigeria",
-     "clicks": 147,
-     "impressions": 2756
+     "clicks": 174,
+     "impressions": 4387
     },
     {
      "c": "Italy",
-     "clicks": 106,
-     "impressions": 1752
+     "clicks": 137,
+     "impressions": 2412
+    },
+    {
+     "c": "South Africa",
+     "clicks": 133,
+     "impressions": 1750
     },
     {
      "c": "Canada",
-     "clicks": 74,
-     "impressions": 4916
-    },
-    {
-     "c": "Israel",
-     "clicks": 38,
-     "impressions": 448
-    },
-    {
-     "c": "India",
-     "clicks": 36,
-     "impressions": 3218
+     "clicks": 118,
+     "impressions": 7921
     },
     {
      "c": "France",
-     "clicks": 35,
-     "impressions": 1572
+     "clicks": 59,
+     "impressions": 2475
+    },
+    {
+     "c": "India",
+     "clicks": 52,
+     "impressions": 5088
     },
     {
      "c": "Germany",
-     "clicks": 34,
-     "impressions": 1422
+     "clicks": 46,
+     "impressions": 1993
+    },
+    {
+     "c": "Australia",
+     "clicks": 44,
+     "impressions": 3856
     }
    ],
    "devices": [
     {
      "d": "Mobile",
-     "clicks": 1713,
-     "impressions": 51027
+     "clicks": 2292,
+     "impressions": 74451
     },
     {
      "d": "Desktop",
-     "clicks": 1138,
-     "impressions": 85140
+     "clicks": 1563,
+     "impressions": 117321
     },
     {
      "d": "Tablet",
-     "clicks": 32,
-     "impressions": 1659
+     "clicks": 44,
+     "impressions": 2272
     }
    ],
    "top_pages": [
     {
      "p": "/ (homepage)",
-     "clicks": 1570,
-     "impressions": 98008,
-     "pos": 9.27
+     "clicks": 2186,
+     "impressions": 137169,
+     "pos": 8.8
     },
     {
-     "p": "Sentinel S35 manual PDF",
-     "clicks": 714,
-     "impressions": 13774,
-     "pos": 9.97
-    },
-    {
-     "p": "Interface manual PDF",
-     "clicks": 132,
-     "impressions": 3064,
-     "pos": 8.89
+     "p": "Sentinel S35 manual (PDF)",
+     "clicks": 675,
+     "impressions": 13252,
+     "pos": 9.9
     },
     {
      "p": "/products/defender-vehicle-smoke-screen/",
-     "clicks": 88,
-     "impressions": 2214,
-     "pos": 10.02
+     "clicks": 183,
+     "impressions": 4160,
+     "pos": 11.2
     },
     {
      "p": "/smoke-screen-ajax-ready-security-fog/",
-     "clicks": 87,
-     "impressions": 7360,
-     "pos": 7.23
+     "clicks": 158,
+     "impressions": 11720,
+     "pos": 10.6
     },
     {
-     "p": "/products/sentinel-s55/",
-     "clicks": 39,
-     "impressions": 1477,
-     "pos": 8.24
+     "p": "Interface manual (PDF)",
+     "clicks": 138,
+     "impressions": 3210,
+     "pos": 8.6
     },
     {
      "p": "/battery-powered-security-fog-sentinel-go/",
-     "clicks": 31,
-     "impressions": 2431,
-     "pos": 7.69
+     "clicks": 81,
+     "impressions": 4621,
+     "pos": 8.7
+    },
+    {
+     "p": "/products/sentinel-s55/",
+     "clicks": 53,
+     "impressions": 1849,
+     "pos": 8
     }
    ]
   },
   "ai": {
    "gsc_ai": {
-    "note": "GSC 'Performance on Search – Generative AI features' — impressions where smoke-screen.com appeared in AI features (AI Overviews / AI Mode). Data begins 18 May 2026.",
+    "note": "GSC 'Performance on Search – Generative AI features' — impressions where smoke-screen.com appeared in AI features (AI Overviews / AI Mode). Data begins 18 May 2026. Last export 7 Sep 2026; not available via the GSC API, so these figures refresh only with a new export.",
     "window": "2026-05-18 to 2026-09-05",
     "impressions": 13020,
     "daily_avg": 117,
@@ -2245,7 +2245,8 @@
       "citations": 4
      }
     ]
-   }
+   },
+   "as_of": "2026-09-07"
   },
   "blog_archive_scraped": "2026-11-26"
  }
