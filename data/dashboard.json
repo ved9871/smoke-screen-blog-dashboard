@@ -2188,58 +2188,88 @@
     ]
    },
    "bing_ai": {
-    "note": "Bing Webmaster Tools AI reports (Copilot / AI search citations), exported 7 Sep 2026.",
-    "total_citations": 530,
+    "note": "Bing Webmaster Tools AI Performance (Microsoft Copilots and Partners citations), read from the BWT UI on 27 Nov 2026. Prior reading: 530 citations total as of the 7 Sep 2026 export.",
+    "window": "2026-08-27 to 2026-11-25",
+    "total_citations": 1548,
     "grounding_queries": [
      {
+      "q": "smoke screen",
+      "intent": "Informational"
+     },
+     {
       "q": "concept smoke screen",
-      "intent": "Informational",
-      "citations": 76,
-      "share": "32.48%"
+      "intent": "Informational"
+     },
+     {
+      "q": "security fogging system",
+      "intent": "Informational"
+     },
+     {
+      "q": "smoke cloak system",
+      "intent": "Informational"
+     },
+     {
+      "q": "concept smoke",
+      "intent": "Informational"
      },
      {
       "q": "fog security system",
-      "intent": "—",
-      "citations": 4,
-      "share": "14.81%"
+      "intent": "Informational"
      }
     ],
     "top_cited_pages": [
      {
       "p": "smoke-screen.com/ (homepage)",
-      "citations": 332
+      "citations": 1200
      },
      {
       "p": "us.smoke-screen.com/ (legacy US site)",
-      "citations": 74
+      "citations": 82
      },
      {
-      "p": "us.smoke-screen.com/about/concept-smoke-screen",
-      "citations": 38
+      "p": "/fight-back-against-retail-crime/",
+      "citations": 36
      },
      {
-      "p": "/battery-powered-security-fog-sentinel-go/",
+      "p": "/applications/home-security-fog-system/",
+      "citations": 31
+     },
+     {
+      "p": "/applications/atm-cash-handling-security/",
+      "citations": 24
+     },
+     {
+      "p": "Sentinel S35 manual (PDF)",
+      "citations": 22
+     },
+     {
+      "p": "/is-security-fog-the-ultimate-anti-terrorism-tool… (Martyn's Law post)",
+      "citations": 22
+     },
+     {
+      "p": "/pokemon-card-theft-uk-trading-card-shop-security/",
+      "citations": 21
+     },
+     {
+      "p": "/security-smoke-vs-security-fog-whats-the-real-difference",
       "citations": 16
      },
      {
-      "p": "/how-it-works/",
-      "citations": 10
-     },
-     {
-      "p": "/retail-theft-prevention-security-fog/",
-      "citations": 10
-     },
-     {
-      "p": "/applications/retail-security/",
-      "citations": 9
-     },
-     {
       "p": "/faqs/",
-      "citations": 4
+      "citations": 13
+     },
+     {
+      "p": "us.smoke-screen.com/about/concept-smoke-screen (legacy)",
+      "citations": 13
+     },
+     {
+      "p": "Rapid Deploy datasheet (PDF)",
+      "citations": 12
      }
-    ]
+    ],
+    "legacy_us_citations": 116
    },
-   "as_of": "2026-11-26"
+   "as_of": "2026-11-27"
   },
   "blog_archive_scraped": "2026-11-26"
  }
